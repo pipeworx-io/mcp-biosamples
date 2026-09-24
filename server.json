@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/biosamples",
   "title": "Biosamples",
   "description": "EBI BioSamples MCP.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/biosamples",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-biosamples",
