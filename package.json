@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-biosamples",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "EBI BioSamples MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-d871a4e1cbd59f3470cdce4fd9c4ce225033cabb284fdfb41d80d85581b82ff7",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-c46925bc568c988b546ba0a9655f0d7d13eb4e54fdff92d754e849b7bbb148da",
+    "sourceCommit": "babdd280d475dceddecc9ebf8f2a661712781a81"
   }
 }
