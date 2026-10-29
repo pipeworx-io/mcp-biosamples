@@ -1,0 +1,42 @@
+[
+  {
+    "name": "search_samples",
+    "description": "Search EBI BioSamples — metadata for biological samples (cell lines, tissues, organisms) referenced across EBI archives. Free-text search by organism, tissue, or keyword; returns matching samples with accession, name, organism, and release date. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text query — organism, tissue, cell type, or any keyword (e.g. \"liver\", \"Homo sapiens\", \"cancer cell line\")."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results to return (default 15, max 100)."
+        },
+        "page": {
+          "type": "number",
+          "description": "Zero-based page number (default 0)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_sample",
+    "description": "Fetch a single EBI BioSamples record by accession. Returns the sample name, dates, taxId, organism, and a flattened map of its characteristics (organism, tissue, sex, cell type, etc.). Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "accession": {
+          "type": "string",
+          "description": "A BioSamples accession like \"SAMEA4451650\", \"SAMD00004696\", or \"SAMN...\"."
+        }
+      },
+      "required": [
+        "accession"
+      ]
+    }
+  }
+]

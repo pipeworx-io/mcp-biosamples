@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-biosamples",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "EBI BioSamples MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-biosamples": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "biosamples"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-biosamples.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/biosamples",
   "pipeworx": {
-    "sourceHash": "v1-4d85711f0e156eb84e899035f1c0eb931d90b0614a3cc905e19ba0ac76ae22f7",
-    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
+    "mode": "gateway",
+    "slug": "biosamples",
+    "gatewaySlug": "biosamples",
+    "sourceHash": "v1-bce7e09d725334bd3b16da1a94c364b54d2055f6dc06d0bd2d7d8b1911d2a6da",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
