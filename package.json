@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-biosamples",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "EBI BioSamples MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "biosamples",
     "gatewaySlug": "biosamples",
-    "sourceHash": "v1-bce7e09d725334bd3b16da1a94c364b54d2055f6dc06d0bd2d7d8b1911d2a6da",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-b4ab5e957369c6b9457929ff7c8c30a2dc2d3c464efadfd884cb83319f1fe54d",
+    "sourceCommit": "5cb09714e895571153f3d9663c36ff0f140cadd6"
   }
 }
